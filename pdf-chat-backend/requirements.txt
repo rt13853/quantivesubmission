@@ -1,0 +1,6 @@
+fastapi
+langchain==0.0.173
+chromadb==0.3.23
+pypdf
+pygpt4all==1.1.0
+huggingface_hub
