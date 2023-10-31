@@ -96,9 +96,27 @@ The backend will be accessible at `http://localhost:8000`.
 
 6. **View Answers**: The answers to your questions will be displayed in the chat component.
 
-## API Endpoints
+## Backend Approach
 
-### 1. Upload PDF
+The backend of the Document Chatbot App is built using FastAPI, a modern, high-performance web framework for building APIs with Python.
+
+### Components and Libraries
+
+1. **Document Processing**:
+   - The backend uses `langchain` library for document processing. This includes loading and splitting PDF documents.
+
+2. **Text Embeddings**:
+   - `HuggingFaceEmbeddings` is used for generating embeddings of text for further processing.
+
+3. **Vector Stores**:
+   - `Chroma` is used as a vector store to efficiently search for similar documents based on their embeddings.
+
+4. **Question Answering**:
+   - The app employs a pre-trained model from the Hugging Face Hub (`google/flan-t5-small`) for question-answering.
+
+### API Endpoints
+
+#### 1. Upload PDF
 
 - **URL:** `/upload`
 - **Method:** `POST`
@@ -107,7 +125,7 @@ The backend will be accessible at `http://localhost:8000`.
   - `message`: Indicates whether the upload was successful.
   - `file_name`: The name of the uploaded file.
 
-### 2. Ask Question
+#### 2. Ask Question
 
 - **URL:** `/answer`
 - **Method:** `POST`
@@ -140,3 +158,5 @@ document_chatbot
 ## Support and Issues
 
 If you encounter any issues or have questions about the app, please feel free to open an issue on the [GitHub repository](https://github.com/rt13853/quantivesubmission).
+
+Happy chatting!
