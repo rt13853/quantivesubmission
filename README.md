@@ -139,4 +139,4 @@ document_chatbot
 
 ## Support and Issues
 
-If you encounter any issues or have questions about the app, please feel free to open an issue on the [GitHub repository](https://github.com/rt13853@gmail.com/quantivesubmission).
+If you encounter any issues or have questions about the app, please feel free to open an issue on the [GitHub repository](https://github.com/rt13853/quantivesubmission).
